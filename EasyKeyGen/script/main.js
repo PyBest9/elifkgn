@@ -196,15 +196,16 @@ document.getElementById('inputcode').value = ""
 
 
 function mobilischoix() {
+  document.getElementById("input_img1").src="img/mobilis.png";
   document.getElementById('input_img2').removeAttribute('src');
   document.getElementById('input_img3').removeAttribute('src');
   document.getElementById('input_img4').removeAttribute('src');
-  document.getElementById("input_img1").src="../img/mobilis.png";
+  
   document.getElementById('inputcode').value= "";
 }
 
 function djezzychoix() {
-  document.getElementById("input_img2").src="../img/djezzy.png";
+  document.getElementById("input_img2").src="img/Djezzy.png";
   document.getElementById('input_img1').removeAttribute('src');
   document.getElementById('input_img3').removeAttribute('src');
   document.getElementById('input_img4').removeAttribute('src');
@@ -214,7 +215,7 @@ function djezzychoix() {
 }
 
 function ooredoochoix() {
-  document.getElementById("input_img3").src="../img/ooredoo.png";
+  document.getElementById("input_img3").src="img/Ooredoo.png";
   document.getElementById('input_img1').removeAttribute('src');
   document.getElementById('input_img2').removeAttribute('src');
   document.getElementById('input_img4').removeAttribute('src');
@@ -224,7 +225,7 @@ function ooredoochoix() {
 }
 
 function logicielchoix() {
-  document.getElementById("input_img4").src="../img/logiciel.png";
+  document.getElementById("input_img4").src="img/logiciel.png";
   document.getElementById('input_img2').removeAttribute('src');
   document.getElementById('input_img3').removeAttribute('src');
   document.getElementById('input_img1').removeAttribute('src');
