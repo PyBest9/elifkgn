@@ -72,9 +72,9 @@ for (var i = 0, len = sNumber.length; i < len; i += 1) {
 var slc1 = output.slice(0,5);
 var tot1 = slc1.join("")
 var tot2 = parseInt(tot1) + 520 * 3
-var slc2 = output.slice(8);
+var slc2 = output.slice(6);
 var tot3 = slc2.join("");
-var tot4 = parseInt(tot3)+ 1854;
+var tot4 = parseInt(tot3)+ 18540;
 var str = "" + tot2+ ""+tot4;
 document.getElementById("mobilis_result1").innerHTML = str;
 document.getElementById('inputcode').value = ""
@@ -95,7 +95,7 @@ for (var i = 0, len = sNumber.length; i < len; i += 1) {
 var slc1 = output.slice(0,5);
 var tot1 = slc1.join("")
 var tot2 = parseInt(tot1) + 520 * 3
-var slc2 = output.slice(8);
+var slc2 = output.slice(6);
 var tot3 = slc2.join("");
 var tot4 = parseInt(tot3)+ 19082;
 var str = "" + tot2+ ""+tot4;
@@ -120,7 +120,7 @@ for (var i = 0, len = sNumber.length; i < len; i += 1) {
 var slc1 = output.slice(0,5);
 var tot1 = slc1.join("")
 var tot2 = parseInt(tot1) + 520 * 3
-var slc2 = output.slice(8);
+var slc2 = output.slice(6);
 var tot3 = slc2.join("");
 var tot4 = parseInt(tot3)+ 24971;
 var str = "" + tot2+ ""+tot4;
