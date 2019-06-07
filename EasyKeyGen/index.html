@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet"  href="css/jquery.mobile-1.4.5.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="script/jquery.js"></script>
+	
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="script/jquery.mobile-1.4.5.js"></script>
+        <script type="text/javascript" src="script/main.js"></script>
+        
+    </head>
+    <body onload="">
+    	<input type="tex" id="cash">
+    	<div data-role="page" id="page">
+    		<div id="header">
+    			<img id="logo" src="img/logiciel.png">
+    			<span id="logospan">EasyKeyGen</span>
+    			
+    		</div>
+    		<div  id="buttons">
+    		<img class="operator" id="operator1" src="img/mobilis.png" onclick="mobilischoix()">
+    		<img class="operator" id="operator2" src="img/djezzy.png" onclick="djezzychoix()">
+    		<img class="operator" id="operator3" src="img/ooredoo.png" onclick="ooredoochoix()">
+    		<img class="operator" id="operator4" src="img/logiciel.png" onclick="logicielchoix()">
+    		</div>
+    		<div id="beforinput">
+    			<span id="operator_name">Operateur: </span>
+    			<img class="operator_icon" id="input_img1" >
+    			<img class="operator_icon" id="input_img2" >
+    			<img class="operator_icon" id="input_img3" >
+    			<img class="operator_icon" id="input_img4" >
+
+
+    			</p>
+    		</div>
+
+    		<div id="input">
+
+    			<input type="text" name="text-1" id="inputcode" placeholder="Enter code" onfocus="this.placeholder=''" onblur="this.placeholder='Enter code'">
+    			
+    		</div>
+
+    		<div id="result">
+    		<div id="mobilisresult"><img class="operator_result_icon" id="icon_operator1" src="img/mobilis.png">
+    		<span id="mobilis_result1"></span><span id="mobilis_result2"></span></div>
+    		<img class="operator_result_icon" id="icon_operator2" src="img/djezzy.png">
+    		<span id="djezzy_result1"></span><span id="djezzy_result2"></span><br/>
+    		<img class="operator_result_icon" id="icon_operator3" src="img/ooredoo.png">
+    		<span id="ooredoo_result1"></span><span id="ooredoo_result2"></span><br/>
+    		<img class="operator_result_icon" id="icon_operator4" src="img/logiciel.png">
+    		<span id="logiciel_result1"></span><span id="logiciel_result2"></span>
+    			
+    			
+    			
+    			
+    		</div>
+    		<div id="command">
+    			<img id="refresh_button" src="img/refresh_icon.png" onclick="refresh()">
+    			<img id="ok_button" src="img/convert_icon.png" onclick="check_input_if_empty(), call_oprtor1(), call_oprtor2(), call_oprtor3(),call_operator4()">
+    			<img id="copie_button" src="img/copie_icon.png">
+
+    			
+    		</div>
+    		
+    </div><!-- /page -->
+    
+
+
+
+
+
+
+
+
+
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript">
+        	document.getElementById("copie_button").addEventListener("click", copy_password1);
+        	document.getElementById("copie_button").addEventListener("click", copy_password2);
+        	document.getElementById("copie_button").addEventListener("click", copy_password3);
+        	document.getElementById("copie_button").addEventListener("click", copy_password4);
+        	function copy_password1() {
+              var copyText = document.getElementById("mobilis_result1");
+              var textArea = document.createElement("textarea");
+                 textArea.value = copyText.textContent;
+                   document.body.appendChild(textArea);
+                    textArea.select();
+                    document.execCommand("Copy");
+                     textArea.remove();
+}
+                     function copy_password2() {
+              var copyText = document.getElementById("djezzy_result1");
+              var textArea = document.createElement("textarea");
+                 textArea.value = copyText.textContent;
+                   document.body.appendChild(textArea);
+                    textArea.select();
+                    document.execCommand("Copy");
+                     textArea.remove();
+
+}
+ function copy_password3() {
+              var copyText = document.getElementById("ooredoo_result1");
+              var textArea = document.createElement("textarea");
+                 textArea.value = copyText.textContent;
+                   document.body.appendChild(textArea);
+                    textArea.select();
+                    document.execCommand("Copy");
+                     textArea.remove();
+
+}
+ function copy_password4() {
+              var copyText = document.getElementById("logiciel_result1");
+              var textArea = document.createElement("textarea");
+                 textArea.value = copyText.textContent;
+                   document.body.appendChild(textArea);
+                    textArea.select();
+                    document.execCommand("Copy");
+                     textArea.remove();
+
+}
+        </script>
+        
+        
+    </body>
+</html>
